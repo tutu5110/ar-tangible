@@ -1,0 +1,15 @@
+{
+  "name": "imotion-server-relay",
+  "version": "1.0.0",
+  "description": "asdf",
+  "main": "imoserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies":
+    { "websocket" : "latest",
+      "http": "latest",
+      "ws": "0.8.1"}
+}
