@@ -125,6 +125,7 @@
      <Compile Include="Assets\Plugins\websocket-sharp\WebSocketState.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />

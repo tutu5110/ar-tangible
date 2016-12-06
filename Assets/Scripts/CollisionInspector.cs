@@ -3,10 +3,13 @@
 public class CollisionInspector : MonoBehaviour {
 
     private WS ws;
+
+	private JSONObject output, contact, gObject;
 	// Use this for initialization
 	void Start () {
         GameObject wsc = GameObject.Find("WSCommunication");
         ws = wsc.GetComponent<WS>();
+
 	}
 	
 	// Update is called once per frame
@@ -15,15 +18,17 @@ public class CollisionInspector : MonoBehaviour {
 
     private void OnCollisionStay(Collision collision)
     {
-        JSONObject output = new JSONObject();
-        output.AddField("name", gameObject.name);
-
-        JSONObject contact = new JSONObject();
-        contact.AddField("normal", JSONTemplates.FromVector3(collision.contacts[0].normal));
+        output = new JSONObject ();
+		contact = new JSONObject ();
+		gObject = new JSONObject ();
+        
+		output.AddField("name", gameObject.name);
+		gObject.AddField("jointRotation", JSONTemplates.FromVector3(gameObject.transform.rotation.eulerAngles));
+		contact.AddField("normal", JSONTemplates.FromVector3(collision.contacts[0].normal));
         contact.AddField("point", JSONTemplates.FromVector3(transform.TransformVector(collision.contacts[0].point)));
         contact.AddField("separation", collision.contacts[0].separation);
         output.AddField("contact", contact);
-
+		output.AddField ("gameObject", gObject);
         output.AddField("impulse", JSONTemplates.FromVector3(collision.impulse));
         output.AddField("relativeVelocity", JSONTemplates.FromVector3(collision.relativeVelocity));
 

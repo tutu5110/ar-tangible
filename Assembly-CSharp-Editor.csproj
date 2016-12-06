@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\JSON\Editor\JSONChecker.cs" />
      <Compile Include="Assets\LeapMotion\Editor\CustomEditorBase.cs" />
      <Compile Include="Assets\LeapMotion\Editor\LeapHandControllerEditor.cs" />
      <Compile Include="Assets\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\LeapMotion\Scripts\VR\Editor\LeapTemporalWarpingEditor.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />

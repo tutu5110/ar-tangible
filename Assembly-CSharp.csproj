@@ -45,7 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Com_ws.cs" />
+     <Compile Include="Assets\JSON\JSONObject.cs" />
+     <Compile Include="Assets\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SlidingMax.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedFloat.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -112,9 +114,13 @@
      <Compile Include="Assets\LeapMotion\Scripts\VR\LeapVRTemporalWarping.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\VR\TemporalWarpingStatus.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\VR\VRHeightOffset.cs" />
-     <Compile Include="Assets\Main.cs" />
+     <Compile Include="Assets\Scripts\CollisionInspector.cs" />
+     <Compile Include="Assets\Scripts\Main.cs" />
+     <Compile Include="Assets\Scripts\Temp.cs" />
+     <Compile Include="Assets\Scripts\WS.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />
